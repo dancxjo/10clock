@@ -72,6 +72,13 @@ class Clock {
 		
 		//js.Browser.document.getElementById("debug").innerHTML = i +"<br/>"+js.Browser.document.getElementById("debug").innerHTML;
 		
+		js.Browser.document.getElementById("dd").innerHTML = ("" + t).substr(2, 1);
+		js.Browser.document.getElementById("cd").innerHTML = ("" + u).substr(2, 1);
+		js.Browser.document.getElementById("md").innerHTML = ("" + v).substr(2, 1);
+		js.Browser.document.getElementById("dm").innerHTML = ("" + w).substr(2, 1);
+		js.Browser.document.getElementById("cm").innerHTML = ("" + x).substr(2, 1);
+		js.Browser.document.getElementById("mm").innerHTML = ("" + y).substr(2, 1);
+		
 		context.fillText("" + f.substr(0, 3) + " " + f.substr(3) + " µd", width / 2, height / 2 - 100);
 									
 		context.lineWidth = 5;
