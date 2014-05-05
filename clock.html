@@ -5,13 +5,48 @@
 	</head>
 	
 	<body>
-		<canvas id="canvas" width="800" height="600"></canvas>
+		<canvas id="canvas" width="600" height="600"></canvas>
 		<form style="float: right">
-			<input type="checkbox" id="myria"/> <label for="myria">Show the myriahand</label><br/>
-			<input type="checkbox" id="decamicro"/> <label for="decamicro">Show the decamicrohand</label><br/>
-			<input type="checkbox" id="micro"/> <label for="micro">Show the microhand</label>
+			<input type="checkbox" id="myria"/> <label for="myria">Show the decimoment hand</label><br/>
+			<input type="checkbox" id="decamicro"/> <label for="decamicro">Show the centimoment hand</label><br/>
+			<input type="checkbox" id="micro"/> <label for="micro">Show the microday hand</label>
 		</form>
 		<div id="debug" style="float:right;clear:right;font-family:monospace;height:40em;overflow:scroll"></div>
+		<table>
+			<tr style="font-size: 4em;">
+				<td id="dd" style="width:3em">3</td>
+				<td id="cd" style="width:3em">9</td>
+				<td id="md" style="width:3em">7</td>
+				<td id="dm" style="width:3em">2</td>
+				<td id="cm" style="width:3em">2</td>
+				<td id="mm" style="width:3em">5</td>
+			</tr>
+			<tr>
+				<td>deciday</td>
+				<td>centiday</td>
+				<td>milliday</td>
+				<td></td>
+				<td></td>
+				<td>microday</td>
+			</tr>
+			<tr>
+				<td>hectomoment</td>
+				<td>decamoment</td>
+				<td>moment</td>
+				<td>decimoment</td>
+				<td>centimoment</td>
+				<td>millimoment</td>
+			</tr>
+			<tr>
+				<td>02:24:00</td>
+				<td>00:14:24</td>
+				<td>00:01:26.4</td>
+				<td>00:00:08.64</td>
+				<td>00:00:00.864</td>
+				<td>00:00:00.0864</td>
+			</tr>
+		</table>
+		(hh:mm:ss[.ssss])
 		<script src="clock.js"></script>
 	</body>
 
