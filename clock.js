@@ -52,13 +52,16 @@ Clock.draw = function() {
 	var i = t;
 	var f = "" + Math.floor((i - Math.floor(i)) * 1e6);
 	while(f.length < 6) f = "0" + f;
+	window.document.getElementById("day").innerHTML = HxOverrides.substr("" + t,0,2);
 	window.document.getElementById("dd").innerHTML = HxOverrides.substr("" + t,2,1);
 	window.document.getElementById("cd").innerHTML = HxOverrides.substr("" + u,2,1);
 	window.document.getElementById("md").innerHTML = HxOverrides.substr("" + v,2,1);
 	window.document.getElementById("dm").innerHTML = HxOverrides.substr("" + w,2,1);
 	window.document.getElementById("cm").innerHTML = HxOverrides.substr("" + x,2,1);
 	window.document.getElementById("mm").innerHTML = HxOverrides.substr("" + y,2,1);
-	Clock.context.fillText("" + HxOverrides.substr(f,0,3) + " " + HxOverrides.substr(f,3,null) + " µd",Clock.width / 2,Clock.height / 2 - 100);
+	Clock.context.fillText("" + HxOverrides.substr(f,0,3) + "." + HxOverrides.substr(f,3,null),Clock.width / 2,Clock.height / 2 - 100);
+	Clock.context.font = "italic 12pt serif";
+	Clock.context.fillText("moments",Clock.width / 2,Clock.height / 2 - 75);
 	Clock.context.lineWidth = 5;
 	Clock.plot(t,2);
 	Clock.context.stroke();
