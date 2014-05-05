@@ -1,4 +1,4 @@
-decclock
+10clock
 ========
 
 A decimal clock written in HaXe
